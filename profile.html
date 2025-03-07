@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>My Profile</h1>
+        <a href="index.html">Home</a>
+        <button onclick="logout()">Logout</button>
+    </header>
+
+    <section>
+        <h2>Create a Blog</h2>
+        <input type="text" id="title" placeholder="Blog Title">
+        <textarea id="content" placeholder="Blog Content"></textarea>
+        <button onclick="createBlog()">Publish</button>
+    </section>
+
+    <section id="user-blogs">
+        <h2>My Blogs</h2>
+        <div id="my-blog-list"></div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
